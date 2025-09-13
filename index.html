@@ -27,6 +27,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
 
+  <!-- Preload do logo (SVG preferencial). Se não houver SVG, troque pelo PNG/WebP @2x. -->
+  <link rel="preload" href="img/logo-mm.svg" as="image" fetchpriority="high">
+
   <style>
     :root {
       /* Nova paleta – navy + dourado discreto em tema CLARO */
@@ -59,7 +62,23 @@
     header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.86); backdrop-filter: saturate(180%) blur(8px); border-bottom: 1px solid var(--border); }
     .nav { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 18px; padding: 10px 0; }
     .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; color: var(--brand); }
-    .brand__logo { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, var(--brand) 0%, #15345E 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+    /* Wrapper com degradê e borda interna – melhora visual e mantém nitidez do conteúdo do <img> */
+    .brand__logo-wrap {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: none;
+  box-shadow: none;
+  display: grid; place-items: center;
+  flex: 0 0 44px;
+    }
+    /* A imagem: sem crop, sem blur. */
+    .brand__logo {
+      width: 100%; height: 100%;
+      object-fit: contain;          /* <- chave para não recortar nem reamostrar errado */
+      display: block;
+      border-radius: 8px;
+      background: none; border: none;
+    }
     .brand__name { letter-spacing: .2px; }
     nav a { font-weight: 600; margin: 0 10px; }
     .cta-wpp { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-700) 100%); color: #0B1F3A; padding: 10px 16px; border-radius: 999px; font-weight: 800; border: 1px solid rgba(0,0,0,.06); box-shadow: var(--shadow); cursor: pointer; }
@@ -184,10 +203,19 @@
   <a href="#inicio" class="sr-only">Pular para o conteúdo</a>
   <header role="banner" aria-label="Topo do site - Marinho Mendes">
     <div class="container nav">
+      <!-- BLOCO DA MARCA (logo otimizada) -->
       <a class="brand" href="https://marinhomendes.adv.br/" aria-label="Ir ao site Marinho Mendes">
-  <img src="img/Logo5.png" alt="Logo Marinho Mendes" class="brand__logo" style="width:44px;height:44px;border-radius:10px;object-fit:cover;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);background:none;border:none;" />
+        <span class="brand__logo-wrap" aria-hidden="true">
+          <img
+            src="img/logo.png"
+            alt="Logo Marinho Mendes"
+            class="brand__logo"
+            width="44" height="44"
+            loading="eager" decoding="async" fetchpriority="high">
+        </span>
         <div class="brand__name">Marinho Mendes Sociedade de Advogados</div>
       </a>
+
       <nav aria-label="Navegação principal">
         <a href="#entenda">Entenda</a>
         <a href="#procedimentos">Procedimentos</a>
@@ -208,7 +236,7 @@
           <span class="kicker">Societário • Conteúdo Técnico</span>
           <h1 id="titulo-hero" class="h1">Exclusão de Sócios e Destituição de Administradores (LTDA) em 2025</h1>
           <p class="sub">Entenda <strong>motivos</strong>, <strong>fundamentos legais</strong>, <strong>procedimentos</strong> e <strong>direitos</strong> do sócio excluído. Este conteúdo é <em>informativo</em> e em conformidade com a OAB (Provimento 205/2021 e Código de Ética). Cada caso exige <strong>análise jurídica individual</strong>.</p>
-          <img src="img/desligamento_socio.png" alt="Desligamento de Sócio" style="margin-top:14px;width:100%;max-width:100%;height:400px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+          <img src="img/desligamento_socio.png" alt="Desligamento de Sócio" style="margin-top:14px;width:100%;max-width:100%;height:400px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" loading="lazy" decoding="async" width="1600" height="400" />
         </div>
         <aside class="side-card" aria-labelledby="toc-title">
           <h2 id="toc-title" style="margin:0 0 8px 0; font-size:1.1rem;">Navegue por aqui</h2>
@@ -258,7 +286,7 @@
           </ul>
         </div>
       </div>
-  <img src="img/desligamento_socio_empresa.png" alt="Infográfico do Instituto" style="margin-top:14px;width:100%;max-width:100%;height:340px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+      <img src="img/desligamento_socio_empresa.png" alt="Infográfico do Instituto" style="margin-top:14px;width:100%;max-width:100%;height:340px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" loading="lazy" decoding="async" width="1600" height="340" />
     </section>
 
     <section id="fundamentos" aria-labelledby="sec-fund">
@@ -284,7 +312,7 @@
           <div class="step"><div class="num">2</div><div>Garantia de <strong>contraditório e ampla defesa</strong> ao sócio acusado.</div></div>
           <div class="step"><div class="num">3</div><div>Deliberação por <strong>maioria do capital</strong> e <strong>ata</strong> com fundamentação.</div></div>
           <div class="step"><div class="num">4</div><div><strong>Alteração contratual</strong> e arquivamento na Junta Comercial.</div></div>
-          <img src="img/demitido.png" alt="Fluxograma do Extrajudicial" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+          <img src="img/demitido.png" alt="Fluxograma do Extrajudicial" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" loading="lazy" decoding="async" width="1600" height="320" />
         </div>
         <div class="card">
           <h3>Exclusão judicial (quando não houver cláusula ou houver controvérsia)</h3>
@@ -292,7 +320,7 @@
           <div class="step"><div class="num">2</div><div>Prova documental e, se necessário, <strong>perícia</strong>.</div></div>
           <div class="step"><div class="num">3</div><div>Defesa do sócio acusado e produção probatória.</div></div>
           <div class="step"><div class="num">4</div><div>Sentença; posterior <strong>apuração de haveres</strong>, se cabível.</div></div>
-          <img src="img/equipe.png" alt="Diagrama do Judicial" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+          <img src="img/equipe.png" alt="Diagrama do Judicial" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" loading="lazy" decoding="async" width="1600" height="320" />
         </div>
       </div>
     </section>
@@ -315,7 +343,7 @@
             <li>Formalizar <strong>ata</strong> e <strong>alteração contratual</strong>, quando cabível.</li>
             <li>Preservar o <strong>sigilo</strong> e a reputação empresarial.</li>
           </ul>
-          <img src="img/calculo_compra.png" alt="Imagem sobre Governança" style="margin-top:12px;width:100%;max-width:100%;height:260px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+          <img src="img/calculo_compra.png" alt="Imagem sobre Governança" style="margin-top:12px;width:100%;max-width:100%;height:260px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" loading="lazy" decoding="async" width="1600" height="260" />
         </div>
       </div>
     </section>
@@ -359,7 +387,7 @@
             <li>Ajustar o <strong>contrato social</strong> conforme a decisão societária.</li>
             <li>Registrar alterações na <strong>Junta Comercial</strong>.</li>
           </ul>
-          <img src="img/jurista.png" alt="Imagem sobre Sucessão" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+          <img src="img/jurista.png" alt="Imagem sobre Sucessão" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" loading="lazy" decoding="async" width="1600" height="320" />
         </div>
       </div>
     </section>
