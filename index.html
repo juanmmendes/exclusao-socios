@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exclusão de Sócios e Destituição de Administradores (LTDA) | Marinho Mendes Sociedade de Advogados</title>
+  <meta name="description" content="Guia técnico e objetivo sobre exclusão de sócios e destituição de administradores em sociedades LTDA em 2025. Fundamentos legais (arts. 1.030 e 1.085 do CC; Lei 13.792/2019), procedimentos extrajudiciais e judiciais, direitos do sócio excluído e boas práticas. Atendimento com hora marcada." />
+  <link rel="canonical" href="https://marinhomendes.adv.br/exclusao-de-socios-ltda" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Exclusão de Sócios e Destituição de Administradores (LTDA) | Marinho Mendes" />
+  <meta property="og:description" content="Motivos, procedimentos e regras em 2025. Conteúdo informativo, em conformidade com o Provimento 205/2021 da OAB. Agende atendimento pelo WhatsApp." />
+  <meta property="og:url" content="https://marinhomendes.adv.br/exclusao-de-socios-ltda" />
+  <meta property="og:site_name" content="Marinho Mendes Sociedade de Advogados" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Exclusão de Sócios e Destituição de Administradores (LTDA) | Marinho Mendes" />
+  <meta name="twitter:description" content="Fundamentos legais e passo a passo – sem promessas de resultado. Atendimento com hora marcada." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Nova paleta – navy + dourado discreto em tema CLARO */
+      --bg: #F7F7FA;          /* fundo claro */
+      --surface: #FFFFFF;     /* cartões */
+      --text: #111827;        /* slate-900 */
+      --muted: #4B5563;       /* gray-600 */
+      --border: #E5E7EB;      /* gray-200 */
+      --brand: #0B1F3A;       /* navy */
+      --brand-600: #0E2748;   /* navy+ */
+      --accent: #C5A35A;      /* dourado suave */
+      --accent-700: #A6853E;  /* dourado escuro */
+      --ok: #0F766E;          /* teal-700 */
+      --err: #B91C1C;         /* red-700 */
+      --radius: 18px;
+      --shadow: 0 6px 28px rgba(2, 6, 23, .08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    a { color: var(--brand-600); text-decoration: none; }
+    a:focus, button:focus, input:focus, select:focus, textarea:focus { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    .container { width: min(1200px, 92vw); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.86); backdrop-filter: saturate(180%) blur(8px); border-bottom: 1px solid var(--border); }
+    .nav { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 18px; padding: 10px 0; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; color: var(--brand); }
+    .brand__logo { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, var(--brand) 0%, #15345E 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+    .brand__name { letter-spacing: .2px; }
+    nav a { font-weight: 600; margin: 0 10px; }
+    .cta-wpp { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-700) 100%); color: #0B1F3A; padding: 10px 16px; border-radius: 999px; font-weight: 800; border: 1px solid rgba(0,0,0,.06); box-shadow: var(--shadow); cursor: pointer; }
+    .cta-wpp svg { width: 18px; height: 18px; }
+
+    /* Hero – estrutura diferente (coluna central + destaques laterais) */
+    .hero { padding: clamp(30px, 6vw, 80px) 0 24px; }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: start; }
+    .kicker { display:inline-flex; align-items:center; gap:10px; background: #FAF7EF; color: #6B4E10; border: 1px solid #E8D9B8; padding: 7px 12px; border-radius: 999px; font-weight: 600; }
+    .h1 { font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.1; margin: 12px 0; font-weight: 800; letter-spacing: -0.5px; }
+    .sub { color: var(--muted); font-size: clamp(1rem, 1.2vw, 1.125rem); }
+    .side-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; position: sticky; top: 76px; }
+
+    .toc { display: grid; gap: 8px; margin-top: 8px; }
+    .toc a { display:flex; align-items:center; gap:8px; padding: 8px 10px; border-radius: 10px; background: #fff; border: 1px solid var(--border); }
+
+    /* Cards e seções */
+    section { padding: clamp(28px, 5.4vw, 64px) 0; }
+    .section-title { font-size: clamp(1.5rem, 2.4vw, 2rem); margin: 0 0 10px; }
+    .lead { color: var(--muted); }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
+    .grid { display: grid; gap: 18px; }
+    .g2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .g3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .list-check { list-style: none; padding: 0; margin: 0; }
+    .list-check li { position: relative; padding-left: 26px; margin: 8px 0; }
+    .list-check li::before { content: "✔"; position: absolute; left: 0; top: 0; color: var(--ok); font-weight: 900; }
+
+    /* Stepper */
+    .step { display:flex; gap:12px; align-items:flex-start; }
+    .step .num { width: 28px; height: 28px; border-radius: 999px; background: var(--brand); color: #fff; display:grid; place-items:center; font-weight: 800; }
+
+    /* Placeholders para imagens */
+    .img-ph { border: 1.5px dashed #D4D4D8; border-radius: 14px; background:#FFF; display:grid; place-items:center; min-height: 220px; color:#6B7280; }
+    .img-ph span { font-size:.9rem; }
+
+    /* FAQ */
+    details { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; }
+    summary { cursor: pointer; font-weight: 700; color: var(--brand-600); }
+
+    /* Footer */
+    footer { background: #101626; color: #E5E7EB; border-top: 4px solid var(--accent); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1.1fr 1.2fr; gap: 28px; }
+    .small { color: #b18118 ; font-size: .95rem; }
+
+    /* Social icons */
+    .social-list { display:flex; gap:16px; align-items:center; flex-wrap: wrap; }
+    .icon { width: 24px; height: 24px; display:inline-block; color:#000102; }
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    /* CTA móvel fixo */
+    .mobile-cta { display:none; position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-700) 100%); color:#0B1F3A; padding: 12px; border-top: 1px solid rgba(0,0,0,.1); z-index:60; }
+    .mobile-cta .wrap { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .mobile-cta button { background:#0B1F3A; color:#fff; border: none; padding:10px 14px; border-radius:999px; font-weight:800; }
+
+    /* Responsivo */
+    @media (max-width: 980px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .g2 { grid-template-columns: 1fr; }
+      .g3 { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .mobile-cta { display:block; }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+
+  <!-- Structured Data: LegalService + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Marinho Mendes Sociedade de Advogados",
+    "url": "https://marinhomendes.adv.br/",
+    "areaServed": "Brasil",
+    "priceRange": "Consultar",
+    "telephone": "+55 19 97410-0605",
+    "sameAs": [
+      "https://www.facebook.com/marinhomendesadv",
+      "https://www.instagram.com/marinhomendes.adv",
+      "https://www.linkedin.com/company/14030512/"
+    ],
+    "address": [{
+      "@type": "PostalAddress",
+      "streetAddress": "Av. José Rocha Bonfim, 214, Bloco J – Sala 228 – Ed. Milão, Praça Capital, Loteamento Center Santa Genebra",
+      "addressLocality": "Campinas",
+      "addressRegion": "SP",
+      "postalCode": "13080-650",
+      "addressCountry": "BR"
+    },{
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Antônio Nelson Barbosa, 93 – Jardim do Bosque",
+      "addressLocality": "Hortolândia",
+      "addressRegion": "SP",
+      "postalCode": "13186-231",
+      "addressCountry": "BR"
+    }]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" id="faqSchema">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Um sócio pode excluir o outro sozinho?", "acceptedAnswer": {"@type": "Answer", "text": "A exclusão extrajudicial exige previsão no contrato social (art. 1.085 do CC) e deliberação de sócios que representem mais da metade do capital social. Em sociedades com apenas dois sócios, a Lei 13.792/2019 alterou quóruns para destituição de administrador, mas a exclusão de sócio deve observar as regras do art. 1.085."}},
+      {"@type": "Question", "name": "É necessário advogado para exclusão de sócio?", "acceptedAnswer": {"@type": "Answer", "text": "Recomendável e, na prática, essencial para mitigar riscos e nulidades: definição da via (extrajudicial ou judicial), garantia de contraditório e ampla defesa, elaboração de atas/notificações e apuração de haveres."}},
+      {"@type": "Question", "name": "O sócio excluído perde tudo?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O sócio tem direito à apuração de haveres com base na situação patrimonial da empresa na data da exclusão, seguindo critérios contratuais e legais, com possibilidade de compensações se houver prejuízos comprovados."}},
+      {"@type": "Question", "name": "Quanto tempo leva a exclusão judicial?", "acceptedAnswer": {"@type": "Answer", "text": "Varia conforme a complexidade e o tribunal. Em geral, envolve fase probatória e pode demandar perícia, estendendo-se por meses ou anos."}},
+      {"@type": "Question", "name": "Quando usar a via judicial?", "acceptedAnswer": {"@type": "Answer", "text": "Quando não houver cláusula contratual autorizando a exclusão extrajudicial, quando houver dúvidas sobre a gravidade dos fatos ou quando a deliberação societária for contestada."}},
+      {"@type": "Question", "name": "Como destituir administrador?", "acceptedAnswer": {"@type": "Answer", "text": "A destituição pode ocorrer por voto de sócios que detenham a maioria do capital (Lei 13.792/2019). Em sociedades com dois sócios, um pode destituir o outro administrador, desde que haja justificativa e observância do contrato social."}},
+      {"@type": "Question", "name": "Quais documentos devo reunir?", "acceptedAnswer": {"@type": "Answer", "text": "Contrato social e alterações, acordo de sócios (se houver), atas, notificações, e-mails, relatórios contábeis, indícios de falta grave (gestão temerária, desvio de recursos, concorrência desleal) e documentação societária pertinente."}},
+      {"@type": "Question", "name": "O que ocorre com as quotas quando um sócio falece?", "acceptedAnswer": {"@type": "Answer", "text": "Em regra, aplica-se a sucessão prevista em contrato social e no Código Civil. Podem ocorrer liquidação de haveres aos herdeiros ou ingresso destes na sociedade, conforme regras contratuais, prazos e eventual necessidade de alterações societárias."}}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a href="#inicio" class="sr-only">Pular para o conteúdo</a>
+  <header role="banner" aria-label="Topo do site - Marinho Mendes">
+    <div class="container nav">
+      <a class="brand" href="https://marinhomendes.adv.br/" aria-label="Ir ao site Marinho Mendes">
+  <img src="img/Logo5.png" alt="Logo Marinho Mendes" class="brand__logo" style="width:44px;height:44px;border-radius:10px;object-fit:cover;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);background:none;border:none;" />
+        <div class="brand__name">Marinho Mendes Sociedade de Advogados</div>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#entenda">Entenda</a>
+        <a href="#procedimentos">Procedimentos</a>
+        <a href="#haveres">Direitos e Haveres</a>
+        <a href="#faq">FAQ</a>
+        <button class="cta-wpp" id="ctaHeader" aria-label="Falar no WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.74 11.74 0 0 0 12 .75C5.8.75.77 5.78.77 12c0 2 .51 3.9 1.48 5.6L.75 23.25l5.77-1.48A11.2 11.2 0 0 0 12 23.23c6.22 0 11.25-5.03 11.25-11.25 0-2.99-1.17-5.79-3.23-7.75Zm-8.52 17.2c-1.77 0-3.53-.47-5.07-1.35l-.36-.2-3.42.88.91-3.34-.23-.37A8.94 8.94 0 0 1 3 12C3 7 7.02 2.98 12 2.98c2.39 0 4.64.93 6.33 2.62A8.9 8.9 0 0 1 21.02 12c0 4.99-4.02 9-9.02 9Zm5.15-6.73c-.28-.14-1.66-.82-1.92-.9-.26-.1-.45-.14-.63.14-.19.27-.73.9-.9 1.08-.17.2-.33.22-.6.08-.28-.14-1.16-.43-2.2-1.36-.82-.73-1.37-1.64-1.53-1.92-.17-.27-.02-.42.12-.56.12-.12.27-.31.4-.47.14-.15.18-.26.27-.44.09-.18.05-.33-.02-.47-.07-.14-.62-1.52-.85-2.07-.22-.53-.44-.46-.63-.47h-.54c-.19 0-.5.07-.76.33-.26.27-1 1-.98 2.42.02 1.43 1.04 2.8 1.18 2.98.14.17 2.06 3.16 5 4.43.7.3 1.25.48 1.67.62.7.22 1.34.19 1.85.11.56-.08 1.66-.67 1.9-1.32.23-.64.23-1.18.16-1.32-.07-.14-.26-.22-.54-.36Z"/></svg>
+          WhatsApp
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="container" role="main">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker">Societário • Conteúdo Técnico</span>
+          <h1 id="titulo-hero" class="h1">Exclusão de Sócios e Destituição de Administradores (LTDA) em 2025</h1>
+          <p class="sub">Entenda <strong>motivos</strong>, <strong>fundamentos legais</strong>, <strong>procedimentos</strong> e <strong>direitos</strong> do sócio excluído. Este conteúdo é <em>informativo</em> e em conformidade com a OAB (Provimento 205/2021 e Código de Ética). Cada caso exige <strong>análise jurídica individual</strong>.</p>
+          <img src="img/desligamento_socio.png" alt="Desligamento de Sócio" style="margin-top:14px;width:100%;max-width:100%;height:400px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+        </div>
+        <aside class="side-card" aria-labelledby="toc-title">
+          <h2 id="toc-title" style="margin:0 0 8px 0; font-size:1.1rem;">Navegue por aqui</h2>
+          <nav class="toc" aria-label="Sumário da página">
+            <a href="#entenda">O instituto</a>
+            <a href="#fundamentos">Fundamentos legais</a>
+            <a href="#procedimentos">Procedimentos</a>
+            <a href="#destituicao">Destituição de administrador</a>
+            <a href="#haveres">Direitos e haveres</a>
+            <a href="#falecimento">Falecimento de sócio</a>
+            <a href="#boaspraticas">Boas práticas</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <hr style="border:none;border-top:1px solid var(--border); margin:12px 0;"/>
+          <button class="cta-wpp" id="ctaSide" aria-label="Falar no WhatsApp">Agendar atendimento</button>
+          <p class="small" style="margin:8px 0 0 0; color:var(--muted)">Atendimento mediante agendamento. Não prometemos resultados.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="entenda" aria-labelledby="sec-entenda">
+      <h2 id="sec-entenda" class="section-title">O que é a exclusão de sócios e a destituição de administradores</h2>
+      <p class="lead">Mecanismos legais para proteger a sociedade diante de <strong>faltas graves</strong>, <strong>gestão temerária</strong> ou grave <strong>incompatibilidade societária</strong>. A medida é <strong>excepcional</strong> e deve observar contraditório e ampla defesa, além das regras do contrato social e do <strong>Código Civil</strong>.</p>
+      <div class="grid g3">
+        <div class="card">
+          <h3>Integridade societária</h3>
+          <ul class="list-check">
+            <li>Atua diante de desvios relevantes.</li>
+            <li>Evita colapso da governança interna.</li>
+            <li>Exige provas e formalidades.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Comportamentos típicos</h3>
+          <ul class="list-check">
+            <li>Gestão temerária e desvio de recursos.</li>
+            <li>Concorrência desleal e quebra da <em>affectio societatis</em>.</li>
+            <li>Descumprimento grave do contrato social.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Provas e registros</h3>
+          <ul class="list-check">
+            <li>Atas, notificações e e-mails.</li>
+            <li>Relatórios contábeis e pareceres.</li>
+            <li>Documentação organizada e íntegra.</li>
+          </ul>
+        </div>
+      </div>
+  <img src="img/desligamento_socio_empresa.png" alt="Infográfico do Instituto" style="margin-top:14px;width:100%;max-width:100%;height:340px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+    </section>
+
+    <section id="fundamentos" aria-labelledby="sec-fund">
+      <h2 id="sec-fund" class="section-title">Fundamentos legais essenciais</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Art. 1.030 (exclusão judicial)</h3>
+          <p>Permite a exclusão por <strong>falta grave</strong>, por meio de ação judicial proposta por sócios que representem mais da metade do capital social. Garante-se contraditório e ampla defesa, com decisão baseada em prova robusta.</p>
+        </div>
+        <div class="card">
+          <h3>Art. 1.085 (exclusão extrajudicial)</h3>
+          <p>Admite exclusão em <strong>reunião/assembleia</strong>, desde que <strong>prevista no contrato social</strong> e que os fatos sejam de <strong>inquestionável gravidade</strong>. Exige deliberação por maioria do capital e formalização na Junta Comercial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="procedimentos" aria-labelledby="sec-proc">
+      <h2 id="sec-proc" class="section-title">Procedimentos práticos</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Exclusão extrajudicial (quando houver cláusula)</h3>
+          <div class="step"><div class="num">1</div><div>Convocação formal com <strong>exposição de motivos</strong>.</div></div>
+          <div class="step"><div class="num">2</div><div>Garantia de <strong>contraditório e ampla defesa</strong> ao sócio acusado.</div></div>
+          <div class="step"><div class="num">3</div><div>Deliberação por <strong>maioria do capital</strong> e <strong>ata</strong> com fundamentação.</div></div>
+          <div class="step"><div class="num">4</div><div><strong>Alteração contratual</strong> e arquivamento na Junta Comercial.</div></div>
+          <img src="img/demitido.png" alt="Fluxograma do Extrajudicial" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+        </div>
+        <div class="card">
+          <h3>Exclusão judicial (quando não houver cláusula ou houver controvérsia)</h3>
+          <div class="step"><div class="num">1</div><div>Ação proposta por sócios com <strong>mais da metade do capital</strong>.</div></div>
+          <div class="step"><div class="num">2</div><div>Prova documental e, se necessário, <strong>perícia</strong>.</div></div>
+          <div class="step"><div class="num">3</div><div>Defesa do sócio acusado e produção probatória.</div></div>
+          <div class="step"><div class="num">4</div><div>Sentença; posterior <strong>apuração de haveres</strong>, se cabível.</div></div>
+          <img src="img/equipe.png" alt="Diagrama do Judicial" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <section id="destituicao" aria-labelledby="sec-dest">
+      <h2 id="sec-dest" class="section-title">Destituição de administrador</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Regras (Lei 13.792/2019)</h3>
+          <ul class="list-check">
+            <li>Voto de sócios que detenham a <strong>maioria do capital</strong>.</li>
+            <li>Em sociedades com <strong>dois sócios</strong>, um pode destituir o outro administrador, observadas as regras contratuais.</li>
+            <li>Motivos: <strong>perda de confiança</strong>, <strong>má gestão</strong> e <strong>quebra de acordos</strong>.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Boas práticas</h3>
+          <ul class="list-check">
+            <li>Basear-se em <strong>fatos e documentos</strong>, evitando decisões emocionais.</li>
+            <li>Formalizar <strong>ata</strong> e <strong>alteração contratual</strong>, quando cabível.</li>
+            <li>Preservar o <strong>sigilo</strong> e a reputação empresarial.</li>
+          </ul>
+          <img src="img/calculo_compra.png" alt="Imagem sobre Governança" style="margin-top:12px;width:100%;max-width:100%;height:260px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <section id="haveres" aria-labelledby="sec-haveres">
+      <h2 id="sec-haveres" class="section-title">Direitos do sócio excluído e apuração de haveres</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Garantias do excluído</h3>
+          <ul class="list-check">
+            <li><strong>Apuração de haveres</strong> na data da exclusão, conforme critérios legais e contratuais.</li>
+            <li>Possibilidade de <strong>retenções/compensações</strong> por prejuízos demonstrados.</li>
+            <li>Transparência e acesso às informações pertinentes.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Critérios e prazos</h3>
+          <ul class="list-check">
+            <li>Avaliação baseada na <strong>situação patrimonial</strong> apurada.</li>
+            <li>Prazos e forma de pagamento conforme <strong>contrato social</strong> e decisões judiciais, se houver.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="falecimento" aria-labelledby="sec-falecimento">
+      <h2 id="sec-falecimento" class="section-title">Falecimento de sócio: quotas e sucessão</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Continuidades e sucessão</h3>
+          <p>Na hipótese de morte do sócio, observam-se o <strong>contrato social</strong> e as regras do Código Civil: liquidação dos haveres aos herdeiros ou eventual ingresso destes, com as modificações societárias necessárias e respeito a prazos.</p>
+          <ul class="list-check">
+            <li>Verificar cláusulas sobre <strong>sucessão e liquidação</strong>.</li>
+            <li>Organizar documentação do espólio e comunicação aos sócios remanescentes.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Orientações práticas</h3>
+          <ul class="list-check">
+            <li>Conferir <strong>inventário</strong> e certidões.</li>
+            <li>Ajustar o <strong>contrato social</strong> conforme a decisão societária.</li>
+            <li>Registrar alterações na <strong>Junta Comercial</strong>.</li>
+          </ul>
+          <img src="img/jurista.png" alt="Imagem sobre Sucessão" style="margin-top:12px;width:100%;max-width:100%;height:320px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);border:none;background:none;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <section id="boaspraticas" aria-labelledby="sec-boas">
+      <h2 id="sec-boas" class="section-title">Boas práticas e papel do advogado</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Boas práticas</h3>
+          <ul class="list-check">
+            <li>Documentar evidências e preservar a cadeia de custódia.</li>
+            <li>Evitar exposição pública desnecessária.</li>
+            <li>Respeitar contraditório e ampla defesa em qualquer via.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Por que o advogado é essencial</h3>
+          <ul class="list-check">
+            <li><strong>Segurança jurídica</strong>: escolha da via adequada e conformidade legal (arts. 1.030 e 1.085; Lei 13.792/2019).</li>
+            <li><strong>Estratégia</strong>: estruturação de provas, atas e notificações; mitigação de nulidades.</li>
+            <li><strong>Eficiência</strong>: planejamento de apuração de haveres e registros na Junta.</li>
+          </ul>
+          <p class="small" style="margin-top:6px; color:var(--muted)">Conteúdo informativo. Não garantimos resultados. Atendimento com hora marcada, em conformidade com o Provimento 205/2021 e o Código de Ética da OAB.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="relacionados" aria-labelledby="sec-rel">
+      <h2 id="sec-rel" class="section-title">Leituras relacionadas</h2>
+      <div class="grid g3">
+        <a class="card" href="https://www.marinhomendes.adv.br/blog/socio-falecido/" rel="noopener">
+          <strong>Sócio falecido: implicações jurídicas</strong>
+          <p class="small">Sucessão societária, prazos e providências.</p>
+        </a>
+        <a class="card" href="https://www.marinhomendes.adv.br/blog/inventario-em-2025/" rel="noopener">
+          <strong>Inventário em 2025</strong>
+          <p class="small">Efeitos na participação societária e governança.</p>
+        </a>
+        <a class="card" href="https://www.marinhomendes.adv.br/blog/direito-societario/" rel="noopener">
+          <strong>Direito societário: direitos e deveres</strong>
+          <p class="small">Direitos mínimos do sócio e deveres de lealdade.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="sec-faq">
+      <h2 id="sec-faq" class="section-title">Perguntas Frequentes</h2>
+      <div class="grid">
+        <details>
+          <summary>Um sócio pode excluir o outro sozinho?</summary>
+          <p>Em regra, <strong>não</strong>. A exclusão extrajudicial de sócio exige <strong>previsão expressa</strong> no contrato social e <strong>deliberação por maioria do capital</strong> em reunião/assembleia (<strong>art. 1.085 do CC</strong>). A regra de dois sócios da <strong>Lei 13.792/2019</strong> refere-se à <em>destituição de administrador</em>, e não autoriza, por si só, a exclusão unilateral de sócio.</p>
+        </details>
+        <details>
+          <summary>É necessário contratar advogado?</summary>
+          <p><strong>Altamente recomendável</strong>. A atuação técnica assegura: escolha da via adequada (extrajudicial/judicial), respeito ao contraditório, elaboração de atas e notificações válidas, prevenção de nulidades e planejamento da apuração de haveres. A presença de advogado reduz riscos, custos e litígios desnecessários.</p>
+        </details>
+        <details>
+          <summary>O sócio excluído perde tudo?</summary>
+          <p><strong>Não</strong>. Mantém o direito à <strong>apuração de haveres</strong> na data da exclusão, seguindo o contrato social e as normas legais. Podem ocorrer <strong>retenções</strong> ou <strong>compensações</strong> se houver prejuízos comprovados causados por ele.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo leva a exclusão judicial?</summary>
+          <p>Depende da complexidade probatória e da pauta do tribunal. Em geral, há <strong>fase de instrução</strong> (provas, perícia, audiências), o que pode estender o trâmite por <strong>meses ou anos</strong>. Não se promete prazo.</p>
+        </details>
+        <details>
+          <summary>Quando optar pela via judicial?</summary>
+          <p>Na ausência de cláusula de exclusão extrajudicial, quando houver <strong>dúvidas sobre a gravidade dos fatos</strong> ou quando a deliberação societária tenda a ser <strong>contestada</strong>. A via judicial oferece <strong>maior segurança</strong> para casos controvertidos.</p>
+        </details>
+        <details>
+          <summary>Como destituir administrador?</summary>
+          <p>Por deliberação de sócios que detenham a <strong>maioria do capital</strong>, observando o contrato social e as formalidades de convocação e registro (<strong>Lei 13.792/2019</strong>). Em sociedade com dois sócios, a destituição pode ser aprovada por um, desde que haja fundamento e forma.</p>
+        </details>
+        <details>
+          <summary>Quais documentos devo reunir?</summary>
+          <p><strong>Contrato social e alterações</strong>, acordo de sócios (se houver), <strong>atas</strong>, <strong>notificações</strong>, <strong>e-mails</strong>, relatórios contábeis e quaisquer evidências da falta grave (gestão temerária, desvio, concorrência desleal, quebra de affectio).</p>
+        </details>
+        <details>
+          <summary>O que acontece com as quotas quando o sócio falece?</summary>
+          <p>Aplica-se a sucessão contratual e legal: <strong>liquidação de haveres</strong> aos herdeiros ou <strong>ingresso destes na sociedade</strong>, conforme o contrato e a deliberação dos sócios, com os devidos registros na Junta Comercial.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="sec-contato">
+      <h2 id="sec-contato" class="section-title">Canais oficiais</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Endereços</h3>
+          <ul>
+            <li><strong>Campinas:</strong> Av. José Rocha Bonfim, 214, Bloco J – Sala 228 – Ed. Milão, Praça Capital, Loteamento Center Santa Genebra, CEP 13080-650. <span class="small">Fone: (19) 3209-0417.</span></li>
+            <li><strong>Hortolândia:</strong> Rua Antônio Nelson Barbosa, 93 – Jardim do Bosque, CEP 13186-231. <span class="small">Fone/Fax: (19) 3845-4946.</span></li>
+          </ul>
+          <p class="small">Atendimento mediante agendamento. WhatsApp oficial: <a href="#" id="wppFooter">+55 (19) 97410-0605</a></p>
+        </div>
+        <div class="card">
+          <h3>Contatos e sites</h3>
+          <ul>
+            <li><a href="https://marinhomendes.adv.br/" rel="noopener">Site institucional</a></li>
+            <li><a href="https://marinhomendes.adv.br/blog" rel="noopener">Blog</a></li>
+            <li>E-mail: <a href="mailto:adm@marinhomendes.adv.br">adm@marinhomendes.adv.br</a></li>
+          </ul>
+          <div class="social-list" aria-label="Redes sociais">
+            <a href="https://www.instagram.com/marinhomendes.adv" aria-label="Instagram" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 17.8 2.8 2.8 0 0 0 12 9.2Zm5.25-.95a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9Z"/></svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/marinhomendesadv" aria-label="Facebook" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.16.32-1.95 1.98-1.95H17V2.26C16.33 2.18 15.25 2 14 2c-3.05 0-5 1.86-5 5.28V10H6v4h3v8h4Z"/></svg>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.linkedin.com/company/14030512/" aria-label="LinkedIn" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8.5h4.9v14H.5v-14Zm7.5 0h4.7v1.9h.06c.66-1.25 2.26-2.56 4.65-2.56 4.98 0 5.9 3.28 5.9 7.54v7.12h-4.9v-6.3c0-1.5-.03-3.43-2.1-3.43-2.1 0-2.42 1.64-2.42 3.33v6.4H8v-14Z"/></svg>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="small" style="margin-top:12px; color:#94A3B8;">
+        <p><strong>Compliance OAB:</strong> Conteúdo informativo, sem promessa de resultado ou captação indevida. Publicidade moderada e identificação do responsável técnico. Atendimento mediante agendamento.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-grid" style="padding:26px 0;">
+      <div>
+        <p style="font-weight:800;">Marinho Mendes Sociedade de Advogados</p>
+        <p class="small">Escritório independente, de atuação diversificada, com vocação para prestar serviços jurídicos com qualidade e excelência. Representa clientes em todo o território nacional, priorizando eficácia, ética e excelência técnica.</p>
+      </div>
+      <div>
+        <p style="font-weight:700;">Atendimento</p>
+        <p class="small">Com hora marcada. WhatsApp: <a href="#" id="wppFooter2" style="color:#E5E7EB; text-decoration: underline;">+55 (19) 97410-0605</a></p>
+      </div>
+      <div>
+        <p style="font-weight:700;">Avisos</p>
+        <p class="small">Este material não substitui consulta individual. Observância ao Provimento 205/2021 e ao Código de Ética da OAB. Não garantimos resultados.</p>
+        <p class="small"><a href="#" aria-label="Política de Privacidade (modelo)" style="color:#E5E7EB">Política de Privacidade</a> · <a href="#" aria-label="Termos de Uso (modelo)" style="color:#E5E7EB">Termos de Uso</a></p>
+      </div>
+    </div>
+    <div class="container small" style="padding-bottom:14px; color:#94A3B8;">© <span id="ano"></span> Marinho Mendes Sociedade de Advogados</div>
+  </footer>
+
+  <!-- CTA móvel fixo -->
+  <div class="mobile-cta" role="region" aria-label="Contato rápido">
+    <div class="container wrap">
+      <strong>Precisa de orientação societária?</strong>
+      <button id="ctaMobile">Agendar no WhatsApp</button>
+    </div>
+  </div>
+
+  <script>
+    // Helpers
+    const wppNumber = '5519974100605';
+    const utm = 'utm_source=lp_exclusao_socios&utm_medium=site&utm_campaign=conversao_wpp';
+
+    function buildWhatsAppURL(message) {
+      const text = encodeURIComponent(message);
+      return `https://wa.me/${wppNumber}?text=${text}&${utm}`;
+    }
+
+    function openWhatsApp(prefill) {
+      const url = buildWhatsAppURL(prefill);
+      window.open(url, '_blank', 'noopener');
+    }
+
+    // CTAs
+    document.getElementById('ctaHeader').addEventListener('click', () => {
+      const msg = 'Olá! Preciso de orientação sobre exclusão de sócio/destituição de administrador (LTDA). Poderiam agendar um horário?';
+      openWhatsApp(msg);
+    });
+    document.getElementById('ctaSide').addEventListener('click', () => {
+      const msg = 'Olá! Gostaria de consultar sobre medidas societárias (exclusão de sócio/destituição).';
+      openWhatsApp(msg);
+    });
+    document.getElementById('wppFooter').addEventListener('click', (e) => { e.preventDefault(); openWhatsApp('Olá! Poderiam orientar sobre exclusão de sócio/destituição de administrador?'); });
+    document.getElementById('wppFooter2').addEventListener('click', (e) => { e.preventDefault(); openWhatsApp('Olá! Gostaria de agendar atendimento.'); });
+    document.getElementById('ctaMobile').addEventListener('click', () => {
+      openWhatsApp('Olá! Preciso de orientação societária.');
+    });
+
+    // Ano no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
